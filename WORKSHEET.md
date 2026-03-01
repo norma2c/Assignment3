@@ -93,7 +93,13 @@ Open each file and answer the questions in your own words.
 - Which column has a default value? What is it?
 
 ```
-Your answer:
+Your answer: 1.	The table name item is mapped to “items”
+2.	ID ; column ;integer
+Name ; column ; string 
+Description ; column ; string
+Price ; column ; float
+3.	The ID ? 
+
 ```
 
 ### 1b. `db/database.py`
@@ -102,7 +108,10 @@ Your answer:
 - What does `get_db` do, and why does it use `yield`?
 
 ```
-Your answer:
+Your answer: 1.	Engine = create_engine
+2.	It generates the database. yields a SQLAlchemy session per request.
+
+
 ```
 
 ### 1c. `app.py`
