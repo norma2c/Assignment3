@@ -241,25 +241,33 @@ Answer in 2-3 sentences each.
 1. **Why is it better to keep database queries out of `app.py`?**
 
 ```
-Your answer:
+Your answer: It’s better to keep database queries out of app.py because app.py
+should only handle HTTP requests and responses. Putting queries in a separate
+service layer keeps the code organized and easy to read.
 ```
 
 2. **What would you need to change if you switched from SQLite to PostgreSQL?**
 
 ```
-Your answer:
+Your answer: You would need to change the database connection URL in
+db/database.py to point to PostgreSQL . You might also need to adjust
+any SQL syntax or data types that differ from SQLite.
 ```
 
 3. **How does Jinja2 template inheritance (base.html) reduce code duplication?**
 
 ```
-Your answer:
+Your answer: Jinja2 allows multiple pages to reuse a common base layout.
+Each page only needs to define its unique content, which reduces repeated
+HTML code across templates.
 ```
 
 4. **What does `db.refresh(item)` do after `db.commit()`?**
 
 ```
-Your answer:
+Your answer: db.refresh(item) reloads the item object from the database so
+that it has the latest values. Stuff like id or timestamps after db.commit()
+saves changes.
 ```
 
 ---
