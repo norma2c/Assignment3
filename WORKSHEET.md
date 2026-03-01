@@ -122,10 +122,14 @@ Your answer: 1.	Engine = create_engine
 
 ```
 Your answer: 
-1.	The newer lifespan context manager replaces the older @app.on_event("startup") pattern by combining startup and shutdown logic into a single async function. It was two different parts before. 
+1.	The newer lifespan context manager replaces the older
+@app.on_event("startup") pattern by combining startup and shutdown
+logic into a single async function. It was two different parts before. 
 
 
-2.	app.py receives a database session through FastAPI’s dependency injection system. For each request and inject the returned session into the route making it automatic
+2.	app.py receives a database session through FastAPI’s dependency
+injection system. For each request and inject the returned session
+into the route making it automatic
 
 
 ```
